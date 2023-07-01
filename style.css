@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: rgb(244, 189, 116);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+    row-gap: 100px;
+}
+ul li:hover {
+    color: aqua;
+    max-width: fit-content;
+    pointer-events: stroke;
+    cursor: pointer;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 65vh;
+    background-color: black;
+    color: rgb(209, 243, 209);
+   font-family: 'Varela Round', sans-serif;
+   
+   margin: 16px auto;
+   width: 80%;
+   border-radius: 12px;
+   padding: 20px;
+   background-image: url('cbca4b44d91b4cc5025c5727df068b8d.jpg');
+   }
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 140px;
+    background-color: black;
+    color: rgb(232, 197, 197);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 40px;
+    align-items: right;
+    display: flex block;
+    width: 50%;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.662);
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: right;
+    border-radius: 34px;
+    list-style-type: none;
+    width: 80%;
+}
+
+.songItem img{
+    width: 40px;
+    margin: 0 15px;
+    margin-top: 6px;
+    height: 40px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+.songName{
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 6px;
+    color: rgb(61, 55, 55);
+    font-weight: 40;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: red;
+    }
+  }
